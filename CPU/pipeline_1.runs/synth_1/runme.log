@@ -1,0 +1,889 @@
+
+*** Running vivado
+    with args -log Pipeline_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pipeline_1.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Pipeline_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 274.547 ; gain = 57.129
+Command: synth_design -top Pipeline_1 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20184 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 380.039 ; gain = 83.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Pipeline_1' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Pipeline.v:23]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [D:/pipeline_1/pipeline_1.runs/synth_1/.Xil/Vivado-10760-LAPTOP-F06MBVUJ/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (1#1) [D:/pipeline_1/pipeline_1.runs/synth_1/.Xil/Vivado-10760-LAPTOP-F06MBVUJ/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'controller' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU_Decoder' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/ALU_Decoder.v:22]
+INFO: [Synth 8-256] done synthesizing module 'ALU_Decoder' (2#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/ALU_Decoder.v:22]
+INFO: [Synth 8-638] synthesizing module 'maindec' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/maindec.v:23]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (3#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/maindec.v:23]
+INFO: [Synth 8-256] done synthesizing module 'controller' (4#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register_with_six_input' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_six_input.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register_with_six_input' (5#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_six_input.v:23]
+INFO: [Synth 8-638] synthesizing module 'multiplexer32_2_1' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiplexer32_2_1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'multiplexer32_2_1' (6#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiplexer32_2_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register_File' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register_File' (7#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-638] synthesizing module 'Sign_Extend' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Sign_Extend' (8#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register_with_thirteen_input' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_twelve_input.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register_with_thirteen_input' (9#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_twelve_input.v:23]
+INFO: [Synth 8-638] synthesizing module 'multiplexer5_2_1' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiplexer5_2_1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'multiplexer5_2_1' (10#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiplexer5_2_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'multiplexer32_3_1' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiplexer32_3_1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'multiplexer32_3_1' (11#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiplexer32_3_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register4' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register4' (12#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register4.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU_top' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/ALU_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'A_AND_B_32bit' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_AND_B_32bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'A_AND_B_32bit' (13#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_AND_B_32bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'A_AND_invB_32bit' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_AND_invB_32bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'A_AND_invB_32bit' (14#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_AND_invB_32bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'A_OR_B_32bit' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_OR_B_32bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'A_OR_B_32bit' (15#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_OR_B_32bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'A_OR_invB_32bit' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_OR_invB_32bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'A_OR_invB_32bit' (16#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_OR_invB_32bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'A_XOR_B_32bit' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_XOR_B_32bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'A_XOR_B_32bit' (17#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_XOR_B_32bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'A_XOR_invB_32bit' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_XOR_invB_32bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'A_XOR_invB_32bit' (18#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_XOR_invB_32bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'invA' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/invA.v:22]
+INFO: [Synth 8-256] done synthesizing module 'invA' (19#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/invA.v:22]
+INFO: [Synth 8-638] synthesizing module 'fulladder_32bit' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/fulladder_32bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'fulladder_1bit' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/fulladder_1bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'fulladder_1bit' (20#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/fulladder_1bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'fulladder_32bit' (21#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/fulladder_32bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'XOR_Enable' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/XOR_Enable.v:23]
+INFO: [Synth 8-256] done synthesizing module 'XOR_Enable' (22#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/XOR_Enable.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register' (23#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-638] synthesizing module 'multiply_32' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:23]
+INFO: [Synth 8-638] synthesizing module 'fulladder_32' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/fulladder_32.v:23]
+INFO: [Synth 8-638] synthesizing module 'G_produce' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/G_produce.v:22]
+INFO: [Synth 8-256] done synthesizing module 'G_produce' (24#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/G_produce.v:22]
+INFO: [Synth 8-256] done synthesizing module 'fulladder_32' (25#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/fulladder_32.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX32_2_1' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/MUX32_2_1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX32_2_1' (26#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/MUX32_2_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register_with_two_input' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_two_input.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register_with_two_input' (27#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_two_input.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'C' does not match port width (32) of module 'Register_with_two_input' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:196]
+WARNING: [Synth 8-689] width (32) of port connection 'Y3' does not match port width (16) of module 'Register_with_two_input' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:201]
+INFO: [Synth 8-256] done synthesizing module 'multiply_32' (28#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:23]
+INFO: [Synth 8-638] synthesizing module 'shift' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/shift.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX_2_1' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/MUX_2_1.v:22]
+INFO: [Synth 8-256] done synthesizing module 'MUX_2_1' (29#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/MUX_2_1.v:22]
+INFO: [Synth 8-638] synthesizing module 'MUX_4_1' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/MUX_4_1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_4_1' (30#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/MUX_4_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX_32_1' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/MUX_32_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX_8_1' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/MUX_8_1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_8_1' (31#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/MUX_8_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'Decoder_2_4' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Decoder_2_4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_2_4' (32#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Decoder_2_4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_32_1' (33#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/MUX_32_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'thermometer' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/thermometer.v:23]
+INFO: [Synth 8-638] synthesizing module 'Decoder_5_32' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Decoder_5_32.v:23]
+INFO: [Synth 8-638] synthesizing module 'Decoder_3_8' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Decoder_3_8.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_3_8' (34#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Decoder_3_8.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_5_32' (35#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Decoder_5_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'thermometer' (36#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/thermometer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'shift' (37#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/shift.v:23]
+INFO: [Synth 8-638] synthesizing module 'sub_32bit' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/sub_32bit.v:23]
+	Parameter cin bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'sub_32bit' (38#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/sub_32bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'A_XNOR_B_32bit' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_XNOR_B_32bit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'A_XNOR_B_32bit' (39#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/A_XNOR_B_32bit.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register3' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register3.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register3' (40#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register3.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register2' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register2' (41#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU_top' (42#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/ALU_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register_with_three_input' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_three_input.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register_with_three_input' (43#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_three_input.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register_with_six_input1' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_six_input1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register_with_six_input1' (44#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_six_input1.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register_without_enable' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_enable.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register_without_enable' (45#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_enable.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_1' (46#1) [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Pipeline.v:23]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[31]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[30]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[29]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[28]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[27]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[26]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[25]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[24]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[23]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[22]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[21]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[20]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[19]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[18]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[17]
+WARNING: [Synth 8-3331] design Register_with_two_input has unconnected port C[16]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[31]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[30]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[29]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[28]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[27]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[26]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[25]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[24]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[23]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[22]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[21]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[20]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[19]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[18]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[17]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 435.195 ; gain = 138.270
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u0:A[511] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[510] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[509] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[508] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[507] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[506] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[505] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[504] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[503] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[502] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[501] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[500] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[499] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[498] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[497] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[496] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[495] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[494] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[493] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[492] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[491] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[490] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[489] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[488] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[487] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[486] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[485] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[484] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[483] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[482] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[481] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[480] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[479] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[478] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[477] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[476] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[475] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[474] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[473] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[472] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[471] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[470] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[469] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[468] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[467] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[466] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[465] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[464] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[463] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[462] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[461] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[460] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[459] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[458] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[457] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[456] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[455] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[454] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[453] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[452] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[451] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[450] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[449] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[448] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[447] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[446] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[445] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[444] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[443] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[442] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[441] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[440] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[439] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[438] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[437] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[436] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[435] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[434] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[433] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[432] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[431] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[430] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[429] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[428] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[427] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[426] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[425] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[424] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[423] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[422] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[421] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[420] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[419] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[418] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[417] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[416] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[415] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[414] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[413] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+WARNING: [Synth 8-3295] tying undriven pin u0:A[412] to constant 0 [D:/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v:129]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 435.195 ; gain = 138.270
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/pipeline_1/pipeline_1.runs/synth_1/.Xil/Vivado-10760-LAPTOP-F06MBVUJ/dcp3/dist_mem_gen_0_in_context.xdc] for cell 'u11'
+Finished Parsing XDC File [D:/pipeline_1/pipeline_1.runs/synth_1/.Xil/Vivado-10760-LAPTOP-F06MBVUJ/dcp3/dist_mem_gen_0_in_context.xdc] for cell 'u11'
+Parsing XDC File [D:/pipeline_1/pipeline_1.srcs/constrs_1/new/test.xdc]
+Finished Parsing XDC File [D:/pipeline_1/pipeline_1.srcs/constrs_1/new/test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/pipeline_1/pipeline_1.srcs/constrs_1/new/test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Pipeline_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Pipeline_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+write_xdc: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 797.676 ; gain = 0.520
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.147 . Memory (MB): peak = 798.488 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u11' at clock pin 'clk' is different from the actual clock period '12.230', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:01:22 . Memory (MB): peak = 799.559 ; gain = 502.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:01:22 . Memory (MB): peak = 799.559 ; gain = 502.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u11. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:01:25 . Memory (MB): peak = 799.559 ; gain = 502.633
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ALUControl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "controls" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Y" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_enable.v:36]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:01:35 . Memory (MB): peak = 799.559 ; gain = 502.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 97    
+	   3 Input      1 Bit         XORs := 608   
++---Registers : 
+	              512 Bit    Registers := 2     
+	              480 Bit    Registers := 2     
+	               32 Bit    Registers := 19    
+	               16 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ALU_Decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input      4 Bit        Muxes := 1     
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+Module Register_with_six_input 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module multiplexer32_2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+Module Register_File 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module Register_with_thirteen_input 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
+Module multiplexer5_2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module multiplexer32_3_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Register4 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module A_XOR_B_32bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 32    
+Module A_XOR_invB_32bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 32    
+Module fulladder_1bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module XOR_Enable 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Register 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module fulladder_32 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 32    
+Module Register_with_two_input 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+	              480 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+Module A_XNOR_B_32bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 32    
+Module Register3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+Module Register2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module ALU_top 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Register_with_three_input 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module Register_with_six_input1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module Register_without_enable 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element u0/Y1_reg was removed.  [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_two_input.v:36]
+WARNING: [Synth 8-6014] Unused sequential element u1/Y1_reg was removed.  [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_two_input.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'u0/Y2_reg' and it is trimmed from '480' to '160' bits. [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_two_input.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'u1/Y4_reg' and it is trimmed from '32' to '21' bits. [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_two_input.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'u0/Y4_reg' and it is trimmed from '32' to '27' bits. [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_two_input.v:39]
+WARNING: [Synth 8-3936] Found unconnected internal register 'u1/Y2_reg' and it is trimmed from '480' to '352' bits. [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_two_input.v:37]
+INFO: [Synth 8-4471] merging register 'p1/Y1_reg' into 'uu/Y1_reg' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register2.v:32]
+INFO: [Synth 8-4471] merging register 'p2/Y1_reg' into 'uu1/Y1_reg' [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register2.v:32]
+WARNING: [Synth 8-6014] Unused sequential element p1/Y1_reg was removed.  [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register2.v:32]
+WARNING: [Synth 8-6014] Unused sequential element p2/Y1_reg was removed.  [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register2.v:32]
+INFO: [Synth 8-5546] ROM "u12/uu2/controls" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "u9/Y" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element u9/i_reg was removed.  [D:/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_enable.v:36]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[31]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[30]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[29]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[28]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[27]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[26]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[25]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[24]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[23]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[22]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[21]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[20]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[19]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[18]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[17]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INA[16]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[31]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[30]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[29]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[28]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[27]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[26]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[25]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[24]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[23]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[22]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[21]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[20]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[19]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[18]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[17]
+WARNING: [Synth 8-3331] design multiply_32 has unconnected port INB[16]
+INFO: [Synth 8-3886] merging instance 'u4/Y9_reg[0]' (FD) to 'u4/Y11_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u4/Y9_reg[1]' (FD) to 'u4/Y11_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u4/Y9_reg[2]' (FD) to 'u4/Y11_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u4/Y9_reg[3]' (FD) to 'u4/Y11_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u4/Y9_reg[4]' (FD) to 'u4/Y11_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u4/Y11_reg[6]' (FD) to 'u4/Y10_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u4/Y11_reg[7]' (FD) to 'u4/Y10_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u4/Y11_reg[8]' (FD) to 'u4/Y10_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u4/Y11_reg[9]' (FD) to 'u4/Y10_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u4/Y11_reg[10]' (FD) to 'u4/Y10_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u4/Y12_reg' (FD) to 'u4/Y3_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[159]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[158]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[157]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[156]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[155]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[127]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[126]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[125]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[124]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[123]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[122]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[121]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[120]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[119]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[118]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[117]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[116]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[115]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[114]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[113]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[112]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[111]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[110]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[109]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[108]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[107]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[106]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[105]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[104]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[103]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[102]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[101]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[100]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[99]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[98]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[97]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[96]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[95]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[94]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[93]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[92]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[91]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[90]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[89]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[88]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[87]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[86]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[85]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[84]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[83]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[82]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[81]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[80]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[79]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[78]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[77]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[76]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[75]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[74]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[73]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[72]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[71]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[70]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[69]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[68]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[67]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[66]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[65]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[64]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[63]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[62]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[61]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[60]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[59]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[58]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[57]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[56]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[55]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[54]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[53]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[52]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[51]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[50]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[49]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[48]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[47]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[46]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[45]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[44]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[43]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[42]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[41]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[40]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[39]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[38]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[37]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[36]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[35]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[34]) is unused and will be removed from module multiply_32.
+WARNING: [Synth 8-3332] Sequential element (u0/Y2_reg[33]) is unused and will be removed from module multiply_32.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'u7/multiply_32/u0/Y2_reg[154]' (FD) to 'u7/multiply_32/u0/Y2_reg[153]'
+INFO: [Synth 8-3886] merging instance 'u7/multiply_32/u0/Y2_reg[152]' (FD) to 'u7/multiply_32/u0/Y2_reg[153]'
+INFO: [Synth 8-3886] merging instance 'u7/multiply_32/u0/Y2_reg[153]' (FD) to 'u7/multiply_32/u0/Y2_reg[151]'
+INFO: [Synth 8-3886] merging instance 'u7/multiply_32/u0/Y2_reg[150]' (FD) to 'u7/multiply_32/u0/Y2_reg[151]'
+INFO: [Synth 8-3886] merging instance 'u7/multiply_32/u0/Y2_reg[149]' (FD) to 'u7/multiply_32/u0/Y2_reg[151]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u7/multiply_32/\u0/Y2_reg[151] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:02:04 . Memory (MB): peak = 799.559 ; gain = 502.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------+-----------+----------------------+---------------+
+|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------+-----------+----------------------+---------------+
+|Pipeline_1  | u2/rf_reg  | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:02:19 . Memory (MB): peak = 804.074 ; gain = 507.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:02:24 . Memory (MB): peak = 828.586 ; gain = 531.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'u7/p1/Y2_reg' (FD) to 'u7/multiply_32/u0/Y3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u7/p2/Y2_reg' (FD) to 'u7/multiply_32/u1/Y3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u7/i0/Y2_reg[0]' (FD) to 'u7/i0/Y3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u7/i1/Y2_reg[0]' (FD) to 'u7/i1/Y3_reg[0]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:02:27 . Memory (MB): peak = 883.504 ; gain = 586.578
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop u7/multiply_32/u1/Y2_reg[320] is being inverted and renamed to u7/multiply_32/u1/Y2_reg[320]_inv.
+INFO: [Synth 8-5365] Flop u7/multiply_32/u1/Y2_reg[321] is being inverted and renamed to u7/multiply_32/u1/Y2_reg[321]_inv.
+INFO: [Synth 8-5365] Flop u7/multiply_32/u1/Y2_reg[322] is being inverted and renamed to u7/multiply_32/u1/Y2_reg[322]_inv.
+INFO: [Synth 8-5365] Flop u7/multiply_32/u1/Y2_reg[323] is being inverted and renamed to u7/multiply_32/u1/Y2_reg[323]_inv.
+INFO: [Synth 8-5365] Flop u7/multiply_32/u1/Y2_reg[324] is being inverted and renamed to u7/multiply_32/u1/Y2_reg[324]_inv.
+INFO: [Synth 8-5365] Flop u7/multiply_32/u1/Y2_reg[325] is being inverted and renamed to u7/multiply_32/u1/Y2_reg[325]_inv.
+INFO: [Synth 8-5365] Flop u7/multiply_32/u1/Y2_reg[326] is being inverted and renamed to u7/multiply_32/u1/Y2_reg[326]_inv.
+INFO: [Synth 8-5365] Flop u7/multiply_32/u1/Y2_reg[327] is being inverted and renamed to u7/multiply_32/u1/Y2_reg[327]_inv.
+INFO: [Synth 8-5365] Flop u7/multiply_32/u1/Y2_reg[328] is being inverted and renamed to u7/multiply_32/u1/Y2_reg[328]_inv.
+INFO: [Synth 8-5365] Flop u7/multiply_32/u1/Y2_reg[329] is being inverted and renamed to u7/multiply_32/u1/Y2_reg[329]_inv.
+INFO: [Synth 8-5365] Flop u7/multiply_32/u1/Y2_reg[330] is being inverted and renamed to u7/multiply_32/u1/Y2_reg[330]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:02:28 . Memory (MB): peak = 883.504 ; gain = 586.578
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:02:29 . Memory (MB): peak = 883.504 ; gain = 586.578
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:02:29 . Memory (MB): peak = 883.504 ; gain = 586.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:02:29 . Memory (MB): peak = 883.504 ; gain = 586.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:02:29 . Memory (MB): peak = 883.504 ; gain = 586.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:02:29 . Memory (MB): peak = 883.504 ; gain = 586.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Pipeline_1  | u0/Y1_reg     | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Pipeline_1  | u0/Y4_reg[4]  | 4      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|Pipeline_1  | u0/Y0_reg     | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Pipeline_1  | t2/Y1_reg[3]  | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|Pipeline_1  | u8/Y0_reg     | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Pipeline_1  | u8/Y5_reg[31] | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
++------------+---------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |dist_mem_gen_0 |     1|
+|2     |BUFG           |     1|
+|3     |CARRY4         |    11|
+|4     |LUT1           |    17|
+|5     |LUT2           |    31|
+|6     |LUT3           |   186|
+|7     |LUT4           |   200|
+|8     |LUT5           |   208|
+|9     |LUT6           |   699|
+|10    |MUXF7          |    13|
+|11    |RAM32M         |    12|
+|12    |SRL16E         |    44|
+|13    |FDRE           |   586|
+|14    |FDSE           |     3|
+|15    |IBUF           |     2|
+|16    |OBUF           |     1|
++------+---------------+------+
+
+Report Instance Areas: 
++------+----------------+-----------------------------+------+
+|      |Instance        |Module                       |Cells |
++------+----------------+-----------------------------+------+
+|1     |top             |                             |  2078|
+|2     |  u13           |multiplexer32_2_1_1          |    32|
+|3     |  u5            |multiplexer5_2_1             |     5|
+|4     |  u6            |multiplexer32_3_1            |    32|
+|5     |  q12           |Register_with_three_input    |    33|
+|6     |  t1            |Register4                    |     4|
+|7     |  t2            |Register4_0                  |   135|
+|8     |  u0            |Register_with_six_input      |   131|
+|9     |  u1            |multiplexer32_2_1            |    32|
+|10    |  u2            |Register_File                |    12|
+|11    |  u4            |Register_with_thirteen_input |   628|
+|12    |  u7            |ALU_top                      |   789|
+|13    |    i0          |Register3                    |    95|
+|14    |    i1          |Register3_2                  |    97|
+|15    |    invA        |invA                         |    16|
+|16    |    multiply_32 |multiply_32                  |   534|
+|17    |      u0        |Register_with_two_input      |   284|
+|18    |      u1        |Register_with_two_input_14   |   250|
+|19    |    shift1      |shift                        |    21|
+|20    |      uu11      |MUX_32_1                     |     4|
+|21    |      uu24      |MUX_32_1_5                   |     2|
+|22    |      uu25      |MUX_32_1_6                   |     2|
+|23    |      uu26      |MUX_32_1_7                   |     2|
+|24    |      uu27      |MUX_32_1_8                   |     2|
+|25    |      uu28      |MUX_32_1_9                   |     1|
+|26    |      uu29      |MUX_32_1_10                  |     2|
+|27    |      uu3       |MUX_32_1_11                  |     1|
+|28    |      uu30      |MUX_32_1_12                  |     2|
+|29    |      uu31      |MUX_32_1_13                  |     3|
+|30    |    shift3      |shift_3                      |    18|
+|31    |      ui        |thermometer                  |    18|
+|32    |    uu          |Register                     |     1|
+|33    |    uu1         |Register_4                   |     7|
+|34    |  u8            |Register_with_six_input1     |    72|
+|35    |  u9            |Register_without_enable      |   105|
++------+----------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:02:29 . Memory (MB): peak = 883.504 ; gain = 586.578
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 527 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:36 . Memory (MB): peak = 883.504 ; gain = 222.215
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:02:29 . Memory (MB): peak = 883.504 ; gain = 586.578
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+145 Infos, 277 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:02:56 . Memory (MB): peak = 883.504 ; gain = 590.898
+INFO: [Common 17-1381] The checkpoint 'D:/pipeline_1/pipeline_1.runs/synth_1/Pipeline_1.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 883.504 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 883.504 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 883.504 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 10 01:13:23 2018...

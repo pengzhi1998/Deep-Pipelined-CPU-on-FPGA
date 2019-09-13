@@ -1,0 +1,99 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Tue Jul 10 01:18:54 2018
+| Host         : LAPTOP-F06MBVUJ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Pipeline_1_control_sets_placed.rpt
+| Design       : Pipeline_1
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    38 |
+| Unused register locations in slices containing registers |    10 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             491 |          219 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              93 |           33 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               6 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |                                      Enable Signal                                     | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------------------------------------------------+------------------+------------------+----------------+
+|  CLK_IBUF_BUFG | u9/i                                                                                   | u9/i[6]_i_1_n_0  |                2 |              6 |
+|  CLK_IBUF_BUFG |                                                                                        | u9/Y[11]         |               12 |             29 |
+|  CLK_IBUF_BUFG |                                                                                        | u0/Y7_reg[0]     |               10 |             32 |
+|  CLK_IBUF_BUFG |                                                                                        | u0/Y6_reg[0]     |               11 |             32 |
+|  CLK_IBUF_BUFG | u0/Y6_reg[1]                                                                           |                  |               12 |             96 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_3712_3839_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_384_511_0_0_i_1_n_0   |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_3968_4095_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_512_639_0_0_i_1_n_0   |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_640_767_0_0_i_1_n_0   |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_768_895_0_0_i_1_n_0   |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_2688_2815_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_2816_2943_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_2944_3071_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_3072_3199_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_3200_3327_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_3328_3455_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_3456_3583_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_3584_3711_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_256_383_0_0_i_1_n_0   |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_3840_3967_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_896_1023_0_0_i_1_n_0  |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0     |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_1024_1151_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_1152_1279_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_1280_1407_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0   |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_1408_1535_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_1536_1663_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_1664_1791_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_1792_1919_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_1920_2047_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_2048_2175_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_2176_2303_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_2304_2431_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_2432_2559_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG | u11/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_2560_2687_0_0_i_1_n_0 |                  |               32 |            128 |
+|  CLK_IBUF_BUFG |                                                                                        |                  |              227 |            535 |
++----------------+----------------------------------------------------------------------------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 6      |                     1 |
+| 16+    |                    37 |
++--------+-----------------------+
+
+

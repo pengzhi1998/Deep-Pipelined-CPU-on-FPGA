@@ -1,0 +1,94 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/ALU_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/ALU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/A_AND_B_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module A_AND_B_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/A_AND_invB_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module A_AND_invB_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/A_OR_B_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module A_OR_B_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/A_OR_invB_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module A_OR_invB_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/A_XNOR_B_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module A_XNOR_B_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/A_XOR_B_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module A_XOR_B_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/A_XOR_invB_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module A_XOR_invB_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Decoder_2_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_2_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Decoder_3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Decoder_5_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_5_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/G_produce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_produce
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/MUX32_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX32_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/MUX_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/MUX_32_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_32_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/MUX_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/MUX_8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_8_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Register2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Register3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register3
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Register4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register4
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_without_enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_six_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_with_six_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_six_input1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_with_six_input1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_three_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_with_three_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_twelve_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_with_thirteen_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Register_with_two_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_with_two_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Sign_Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/XOR_Enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module XOR_Enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/fulladder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/fulladder_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/fulladder_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/invA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module invA
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/maindec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/multiplexer32_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer32_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/multiplexer32_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer32_3_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/multiplexer5_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer5_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/multiply_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiply_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/shift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/sub_32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sub_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/thermometer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module thermometer
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.srcs/sources_1/new/Pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/pipeline_1/pipeline_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
